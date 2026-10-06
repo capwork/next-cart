@@ -8,6 +8,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
+
+
+// app/layout.tsx  (Pages Router: pages/_app.tsx, same two <Script> tags)
+import Script from 'next/script';
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
       <body>
         {children}
         <Script id="vibeback-queue" strategy="beforeInteractive">
@@ -23,5 +35,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
 
