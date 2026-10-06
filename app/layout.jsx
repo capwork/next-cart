@@ -1,6 +1,5 @@
 import "./globals.css";
 // app/layout.tsx  (Pages Router: pages/_app.tsx, same two <Script> tags)
-import Script from 'next/script';
 
 
 export const metadata = {
