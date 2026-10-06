@@ -1,21 +1,12 @@
 import "./globals.css";
 // app/layout.tsx  (Pages Router: pages/_app.tsx, same two <Script> tags)
+import Script from 'next/script';
 
 
 export const metadata = {
   title: "Next Cart — Curated for Everyday",
   description: "A modern ecommerce experience for fashion, lifestyle and everyday essentials."
 };
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       <body>{children}</body>
-//     </html>
-//   );
-// }
-
-
 
 export default function RootLayout({ children }) {
   return (
@@ -35,4 +26,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
