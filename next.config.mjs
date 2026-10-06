@@ -1,2 +1,8 @@
-const nextConfig = { images: { remotePatterns: [{ protocol: 'https', hostname: 'images.unsplash.com' }] } };
+const nextConfig = {
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
+};
+
 export default nextConfig;
